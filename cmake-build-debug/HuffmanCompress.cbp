@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="HuffmanCompress"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="HuffmanCompress">
+				<Option output="/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug/HuffmanCompress" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug/Makefile&quot;  VERBOSE=1 HuffmanCompress"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="HuffmanCompress/fast">
+				<Option output="/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug/HuffmanCompress" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug/Makefile&quot;  VERBOSE=1 HuffmanCompress/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/huangwenyu/CLionProjects/HuffmanCompress/cmake-build-debug/model.h">
+			<Option target="HuffmanCompress"/>
+		</Unit>
+		<Unit filename="/Users/huangwenyu/CLionProjects/HuffmanCompress/compress.cpp">
+			<Option target="HuffmanCompress"/>
+		</Unit>
+		<Unit filename="/Users/huangwenyu/CLionProjects/HuffmanCompress/compress.h">
+			<Option target="HuffmanCompress"/>
+		</Unit>
+		<Unit filename="/Users/huangwenyu/CLionProjects/HuffmanCompress/decompress.cpp">
+			<Option target="HuffmanCompress"/>
+		</Unit>
+		<Unit filename="/Users/huangwenyu/CLionProjects/HuffmanCompress/decompress.h">
+			<Option target="HuffmanCompress"/>
+		</Unit>
+		<Unit filename="/Users/huangwenyu/CLionProjects/HuffmanCompress/main.cpp">
+			<Option target="HuffmanCompress"/>
+		</Unit>
+		<Unit filename="/Users/huangwenyu/CLionProjects/HuffmanCompress/model.h">
+			<Option target="HuffmanCompress"/>
+		</Unit>
+		<Unit filename="/Users/huangwenyu/CLionProjects/HuffmanCompress/read.cpp">
+			<Option target="HuffmanCompress"/>
+		</Unit>
+		<Unit filename="/Users/huangwenyu/CLionProjects/HuffmanCompress/read.h">
+			<Option target="HuffmanCompress"/>
+		</Unit>
+		<Unit filename="/Users/huangwenyu/CLionProjects/HuffmanCompress/stdafx.h">
+			<Option target="HuffmanCompress"/>
+		</Unit>
+		<Unit filename="/Users/huangwenyu/CLionProjects/HuffmanCompress/tool.cpp">
+			<Option target="HuffmanCompress"/>
+		</Unit>
+		<Unit filename="/Users/huangwenyu/CLionProjects/HuffmanCompress/tool.h">
+			<Option target="HuffmanCompress"/>
+		</Unit>
+		<Unit filename="/Users/huangwenyu/CLionProjects/HuffmanCompress/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
