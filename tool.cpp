@@ -8,13 +8,13 @@ bool createTree(int * weights, struct HTNode * aHuffmanTree)
 {
     for(int i = 0;i<256;i++){
         aHuffmanTree[i].weight = weights[i];
-        aHuffmanTree[i].lchild=aHuffmanTree[i].parent=aHuffmanTree[i].rchild = 0;
+        aHuffmanTree[i].lchild=aHuffmanTree[i].parent=aHuffmanTree[i].rchild = -1;
     }
 
     for(int i = 0;i<255;i++){
         int start;
         for(int j = 0;j<512;j++){
-            if(aHuffmanTree[j].weight && aHuffmanTree[i].parent == 0 ){
+            if(aHuffmanTree[j].weight && aHuffmanTree[i].parent == -1 ){
                 start = j;
                 break;
             }
@@ -38,6 +38,7 @@ bool createTree(int * weights, struct HTNode * aHuffmanTree)
         aHuffmanTree[256+i].lchild = m_index;
         aHuffmanTree[256+i].rchild = nextm_index;
     }
+
     return true;
 }
 
@@ -45,15 +46,16 @@ bool createTree(int * weights, struct HTNode * aHuffmanTree)
 unsigned char str2byte(char * s){
     unsigned char temp = 0;
     for(int i = 0; i < 8;i++){
-        temp |= s[i]<<(8-i-1);
+        temp |= (s[i]-'0')<<(8-i-1);
     }
     return temp;
 }
 
-void byte2str(char c,char * s){
+void byte2str(unsigned char c,char * s){
     int i = 0;
     for(i = 0;i<8;i++){
-        s[i] = c & 1<<(8-i-1);
+        unsigned char temp = c;
+        s[i] = '0'+((temp>>(8-i-1)) & 1);
     }
     //s[i] = 0;
 }

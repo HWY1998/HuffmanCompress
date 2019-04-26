@@ -20,9 +20,9 @@ int read(int * weights,char * filename)
         size++;
     }
     fclose(fp);
-
-for(int i = 0;i<256;i++)
+/*
+    for(int i = 0;i<256;i++)
         cout<<i<<":"<<weights[i]<<endl;
-
+*/
     return size;
 }

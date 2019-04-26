@@ -6,5 +6,5 @@
 #define HUFFMANCOMPRESS_TOOL_H
 bool createTree(int * weights,struct HTNode * aHuffmanTree);
 unsigned char str2byte(char * s);
-void byte2str(char c,char * s);
+void byte2str(unsigned char c,char * s);
 #endif //HUFFMANCOMPRESS_TOOL_H

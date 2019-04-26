@@ -12,21 +12,9 @@ stdafx.h
 
 /Users/huangwenyu/CLionProjects/HuffmanCompress/compress.h
 
-/Users/huangwenyu/CLionProjects/HuffmanCompress/decompress.cpp
-stdafx.h
-/Users/huangwenyu/CLionProjects/HuffmanCompress/stdafx.h
-
 /Users/huangwenyu/CLionProjects/HuffmanCompress/decompress.h
 
-/Users/huangwenyu/CLionProjects/HuffmanCompress/main.cpp
-stdafx.h
-/Users/huangwenyu/CLionProjects/HuffmanCompress/stdafx.h
-
 /Users/huangwenyu/CLionProjects/HuffmanCompress/model.h
-
-/Users/huangwenyu/CLionProjects/HuffmanCompress/read.cpp
-stdafx.h
-/Users/huangwenyu/CLionProjects/HuffmanCompress/stdafx.h
 
 /Users/huangwenyu/CLionProjects/HuffmanCompress/read.h
 
@@ -47,10 +35,6 @@ tool.h
 /Users/huangwenyu/CLionProjects/HuffmanCompress/tool.h
 decompress.h
 /Users/huangwenyu/CLionProjects/HuffmanCompress/decompress.h
-
-/Users/huangwenyu/CLionProjects/HuffmanCompress/tool.cpp
-stdafx.h
-/Users/huangwenyu/CLionProjects/HuffmanCompress/stdafx.h
 
 /Users/huangwenyu/CLionProjects/HuffmanCompress/tool.h
 

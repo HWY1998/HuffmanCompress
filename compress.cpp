@@ -30,17 +30,21 @@ int output(char * inputFile, char * outputFile,int code[][256],char * s, struct 
     FILE * fp1 = fopen(inputFile,"rb");
     FILE * fp2 = fopen(outputFile,"wb");
     unsigned char x;
+    int count = 0;
     while(!feof(fp1)){
         fread(&x,1,1,fp1);
         int len = code[x][0];
         for(int i = len;i>=1;i--){
-            //s[count++] = (char)code[x][i];//暂未查明为何不可
-            char c = (char)code[x][i];
-            strcat(s,&c);
+            s[count++] = '0'+code[x][i];
+            //char c = (char)code[x][i];
+            //strcat(s,&c);
         }
     }
+    for(int i = 0;s[i];i++)
+        cout<<s[i];
+    cout<<endl;
     int i = 0;
-    char c;
+    unsigned char c;
     int size = 0;
     fwrite(&h,sizeof(Head),1,fp2);
     while(s[i]){
