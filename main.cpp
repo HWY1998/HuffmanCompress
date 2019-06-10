@@ -9,7 +9,7 @@
 int weights[256];
 struct HTNode aHuffmanTree[512];
 int code[256][256];
-char s[4294967295];
+char s[100000000];
 int main() {
     cout<<"1.compress"<<endl;
     cout<<"2.decompress"<<endl;
@@ -26,6 +26,9 @@ int main() {
             cout<<"Please input file's path to save:";
             cin>>outputFile;
             bool f0 = createTree(weights,aHuffmanTree);
+            for(int i = 0; i < 511; i++){
+                cout<<aHuffmanTree[i].parent<<" "<<aHuffmanTree[i].lchild<<" "<<aHuffmanTree[i].rchild<<endl;
+            }
             /*
             if(f0 == true)
                 cout<<"success"<<endl;

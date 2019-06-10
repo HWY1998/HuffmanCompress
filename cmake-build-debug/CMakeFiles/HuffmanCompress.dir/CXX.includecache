@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/huangwenyu/CLionProjects/HuffmanCompress/compress.cpp
+/Users/huangwenyu/CLionProjects/HuffmanCompress/compress.h
+
+/Users/huangwenyu/CLionProjects/HuffmanCompress/decompress.cpp
 stdafx.h
 /Users/huangwenyu/CLionProjects/HuffmanCompress/stdafx.h
-
-/Users/huangwenyu/CLionProjects/HuffmanCompress/compress.h
 
 /Users/huangwenyu/CLionProjects/HuffmanCompress/decompress.h
 

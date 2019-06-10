@@ -4,34 +4,41 @@
 
 #include "stdafx.h"
 
+//生成哈夫曼树
 bool createTree(int * weights, struct HTNode * aHuffmanTree)
 {
+    //哈夫曼树初始化
     for(int i = 0;i<256;i++){
         aHuffmanTree[i].weight = weights[i];
         aHuffmanTree[i].lchild=aHuffmanTree[i].parent=aHuffmanTree[i].rchild = -1;
     }
-
+    for(int i = 256; i < 511; i++){
+        aHuffmanTree[i].weight = 0;
+        aHuffmanTree[i].lchild=aHuffmanTree[i].parent=aHuffmanTree[i].rchild = -1;
+    }
     for(int i = 0;i<255;i++){
         int start;
-        for(int j = 0;j<512;j++){
+        for(int j = 0;j<511;j++){
             if(aHuffmanTree[j].weight && aHuffmanTree[i].parent == -1 ){
                 start = j;
                 break;
             }
         }
-        int m = aHuffmanTree[start].weight, nextm = aHuffmanTree[start+1].weight;
-        int m_index = -1,nextm_index = 0;
-        for(int j = start+2;j<512;j++){
-            if(aHuffmanTree[j].weight){
-                if(aHuffmanTree[j].parent == 0 && aHuffmanTree[j].weight < m){
-                    m = aHuffmanTree[i].weight;
+        int m, nextm;
+        m = nextm = 100000;
+        int m_index = -1, nextm_index = -1;
+        for(int j = start; j < 511; j++) {
+            if(aHuffmanTree[j].weight && aHuffmanTree[j].parent == -1) {
+                if(aHuffmanTree[j].weight < m) {
+                    nextm = m;
+                    nextm_index = m_index;
+                    m = aHuffmanTree[j].weight;
                     m_index = j;
-                }else if(aHuffmanTree[j].parent == 0 && aHuffmanTree[j].weight < nextm){
-                    nextm = aHuffmanTree[i].weight;
+                }else if(aHuffmanTree[j].weight < nextm) {
+                    nextm = aHuffmanTree[j].weight;
                     nextm_index = j;
                 }
-            }else
-                break;
+            }
         }
         aHuffmanTree[m_index].parent = aHuffmanTree[nextm_index].parent = 256+i;
         aHuffmanTree[256+i].weight = aHuffmanTree[m_index].weight + aHuffmanTree[nextm_index].weight;

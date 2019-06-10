@@ -5,13 +5,14 @@
 
 #include "stdafx.h"
 
+//生成每个字节对应的编码
 bool encoding(int * weight,struct HTNode * aHuffmanTree,int code[][256])
 {
     for(int i = 0;i<256;i++){
         int len = 0;
         int temp = i;
         int pa = aHuffmanTree[temp].parent;
-        while(pa != 0){
+        while(pa != -1){
             len++;
             if(temp == aHuffmanTree[pa].lchild){
                 code[i][len] = 0;
@@ -26,6 +27,7 @@ bool encoding(int * weight,struct HTNode * aHuffmanTree,int code[][256])
     return true;
 }
 
+//将图片压缩
 int output(char * inputFile, char * outputFile,int code[][256],char * s, struct Head h){
     FILE * fp1 = fopen(inputFile,"rb");
     FILE * fp2 = fopen(outputFile,"wb");
